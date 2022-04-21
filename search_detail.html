@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url(background1.jpg);
+            background-size: cover;
+        }
+        #search-detail {
+            background-color: rgb(229, 248, 238);
+            position: relative;
+            width: 1280px;
+            border: 1px;
+            height: auto;
+            margin: auto;
+            padding: 10px;
+        }
+        #title-text {
+            
+            padding: 20px;
+            margin: 0;
+            text-align: center;            
+            justify-content: center;
+            font-size: x-large;
+            font-weight: bold;
+            background-color: rgba(117, 139, 145, 0.705);
+        }
+        #footer-text {
+            font-size: larger;
+            font-weight: bold;
+            background-color: rgba(117, 139, 145, 0.705);
+            width: auto;
+            height: auto;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+        #footer-text div {     
+            width: auto;   
+            margin: auto;  
+            padding: auto;            
+            font-size: 15px;
+            text-align: start;
+        }
+        #controll {
+            text-align: center;
+        }
+        #controll > button{
+            width: 70px;
+            height: 40px;
+        }
+        #content {
+            height: auto;
+        }
+        table {           
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            border: 1px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: larger;
+            margin: 5px;
+        }
+        #google-map {
+            width: 30px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-detail">        
+        <div id="content">
+            <table border="0"> 
+                <tr>
+                    <td colspan="2"><p id="title-text"></p> </td>
+                </tr>
+                <tr>
+                    <td style="width: 450px; height: autopx;">
+                        <iframe id="image" src="https://drive.google.com/file/d/1SPt5-5-Eu5eLhNXVGMijMrIqagolFZ4i/preview" width="450" height="300" allow="autoplay"></iframe>
+                        <div id="controll">
+                            
+                        </div>
+                    </td>
+                    <td style="display: block; margin-left: 20px; padding-top: 5px;">
+                        <div >
+                            <p id="gioi">Giới: Động vật (Animalia)</p>
+                            <p id="nganh">Ngành: Động vật có dây sống (chordata)</p>
+                            <p id="lop">Lớp: AMPHIBIA (AAAA,1978)</p>
+                            <p id="bo">Bộ:</p>
+                            <p id="ho">Họ: AAAAAAAA</p>
+                            <p id="IUCN">Tình trạng bảo tồn theo IUCN: AAAAAAAA</p>
+                            <p id="redVN">Tình trạng bảo tồn theo sách đỏ Việt Nam: Không có giá trị bảo tồn</p>
+                            <p id="32_2006">Tình trạng bảo tồn theo sách đỏ Việt Nam Campuchia ma lai phi a: Không có giá trị bảo tồn </p>
+                            <p id="40_2013" >Tình trạng bảo tồn theo sách đỏ Việt Nam Campuchia ma lai phi a: Không có giá trị bảo tồn</p>
+                        </div>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="display: flexbox;">
+                        <p style="margin-top: 10px; margin-bottom: 5px;"><strong>Mô tả đặc điểm hình thái</strong></p>
+                        <p id="DOMC">
+                            Đặc điểm chẩn loại:  <br>
+                            Rắn lành cỡ rất lớn trong họ nhà Trăn Pythonidae, dài tới 8m (kích thước trung bình khoảng từ 4 - 6m). 
+                            Đầu dài, nhỏ. Hai tấm vảy môi trên có trên mỗi tấm vảy một lỗ (lỗ môi là cơ quan cảm giác nhiệt). Có hai cựa nhỏ, hình móng nằm ở hai bên khe huyệt. 
+                            Cựa trăn cái ngắn, ẩn sâu trong hốc bên khe huyệt. Đầu có màu nâu xám, mặt trên đầu có hoa văn hình mũi mác di từ cổ, mũi nhọn hướng về phía đầu mõm. 
+                            Mặt trên lưng có màu xám nhạt hay vàng nhạt có một dãy những vết lớn dài, màu nâu đỏ viền đen. 
+                            Mặt bụng màu vàng hay nâu vàng có những đốm nâu hay đen (Smith 1984).
+                        </p>
+                        <p style="margin-top: 10px; margin-bottom: 5px;"><strong>Mô tả đặc điểm sinh thái</strong></p>
+                        <p id="ED">
+                            Đặc điểm hình thái:   <br>Đầu hình tam giác, chiều dài gần 2 lần chiều rộng. Lỗ mũi tách biệt bởi 2 vảy mũi. Có 2 cặp vảy trước trán, cặp vảy phía sau nhỏ hơn; vảy trán phân chia. 
+                            Vùng vảy chẩm và vùng vảy thái dương không đều. Có 10 – 13 vảy môi trên, vảy thứ VI hoặc thứ VII ở dưới mắt hoặc tách biệt với mắt bởi hàng vảy dưới mắt; 2 vảy môi trên đầu tiên có các hốc cảm nhiệt rõ ràng. 
+                            Mắt được bao quanh bởi 2 hoặc 3 vảy trước mắt, 1 vảy trên mắt, 2 hoặc 3, hiếm khi 4 vảy sau mắt, 1, 2 hiếm khi 3 vảy dưới mắt. Các vảy bao quanh mắt, ngoại trừ vảy trên mắt thường hợp nhất hoặc được phân chia bởi đường đứt nhỏ. Vảy môi trên có 2 hố vảy sâu. 16-22 vảy hàm dưới. Vảy cằm  nhỏ và không đều. Rãnh môi dưới rõ ràng. 
+                            Vảy trơn, 60-75 hàng vảy giữa thân. 256-270 vảy bụng; 65-70 vảy dưới đuôi. Vảy hậu môn phân chia.",
+                            
+                        </p>
+                    </td>
+                </tr>           
+            </table>
+        </div>
+        <div id="footer-text">                    
+            <div >
+                <p id="sampleCollector">alo con ga</p>
+                <p id="sampleCollectionDate">alocon ga</p>
+            </div> 
+            <div>
+                <p id="sampleStatus"></p>
+                <p id="distribution"></p>
+            </div>    
+            <div style="padding-left: 30px;"><img id="google-map" src="../map.png" alt=""></div>
+        </div>
+    </div>
+    <script src="./fetch.js">    
+    </script>
+</body>
+</html>

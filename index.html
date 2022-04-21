@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="root">
+        <div class="header">
+            <div class="header-container">
+                <div class="header-container-contain">
+                    <ul class="nav">
+                        <li>Animals</li>
+                        
+                    </ul>
+                </div>
+                <div class="header-container-search">
+                    <input type="text" name="" class="ip-search" id="tip-search" placeholder="Hãy tìm kiếm gì đó ...">
+                    <i class="ti-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <hr>
+            <div class="content-img">
+                <img src="./assets/picture/1.jpeg" id="img-selector">
+            </div>
+            <div class="content-img">
+                <img src="./assets/picture/2.jpeg" id="img-selector">
+            </div>
+            <div class="content-img">
+                <img src="./assets/picture/3.jpeg" id="img-selector">
+            </div>
+            <div class="content-img">
+                <img src="./assets/picture/4.jpeg" id="img-selector">
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div>
+                <div class="intro">
+                    <div class="content-search" onclick="clickB()">Tìm Hiểu Về Các Loài Vật</div>
+                    <div class="content-search-2" id="result-conttend">Tìm Kiếm Thông Tin</div>
+                </div>
+                <div id="animals-render"></div>
+
+                <div class="animals-search" id="animals-search">
+                    <div class="heading-search">
+
+                        <div class="box-name">
+                            Tìm Động Vật
+                        </div> 
+                        <div class="box-att">
+                            <div class="box-att">
+                                Giới
+                            </div>
+                            <select class="form-select" aria-label="Default select example" id="gioi-animal">
+                                <option selected>All </option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="box-att">
+                            <div class="box-att">
+                                Ngành
+                            </div>
+                            <select class="form-select" aria-label="Default select example" id="nganh-animal">
+                                <option selected>All </option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="box-att">
+                            <div class="box-att">
+                                Lớp
+                            </div>
+                            <select class="form-select" aria-label="Default select example" id="lop-animal">
+                                <option selected>All </option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="box-att">
+                            <div class="box-att">
+                                Họ
+                            </div>
+                            <select class="form-select" aria-label="Default select example" id="ho-animal">
+                                <option selected>All </option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="box-att">
+                            <div class="box-att">
+                               Bộ
+                            </div>
+                            <select class="form-select" aria-label="Default select example" id="bo-animal">
+                                <option selected>All </option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+
+                        <button class="box-btn" onclick="clickC()">Tìm Kiếm</button>
+                    </div>
+
+                    <div class="resual-search row" id="wrap-result">
+
+                        <div class="resual-animal col-6">
+                            <div class="resual-img">
+                                <img src="./assets/animals/1.jpeg" height="150px">
+                            </div>
+                            <div class="resual-inf">
+                                <div class="mg-bottom-4"><a href="">Ichthyophis nguyenorum Nishikawa, Matsui, and Orlov, 2012</a></div>
+                                <div class="text-over-1line mg-bottom-4 name--">Tên Việt Nam: Giun</div>
+                                <div class="mg-bottom-4 name--">Môi Trường Sống: Rừng tràm đặc dụng, rừng tràm trồng</div>
+                                <div class="mg-bottom-4 name--">Tìm Thấy Ở: Rừng Tràm Mỹ Phước, Mỹ Phước, Mỹ Tú, Sóc Trăng</div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+<script src="./assets/js/script.js"></script>
+</html>
