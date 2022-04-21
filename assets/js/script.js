@@ -280,7 +280,7 @@ function clickC(){
             linknode.setAttribute('class', element._id)
             linknode.addEventListener('click', function (){
                 localStorage.setItem("id", this.getAttribute('class'))
-                window.open("http://127.0.0.1:5500/search_detail.html", "_blank" )
+                window.open("https://toancris102.github.io/animals/search_detail.html", "_blank" )
                 
             })
             
