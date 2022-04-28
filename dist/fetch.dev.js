@@ -43,7 +43,7 @@
 // }
 var _id = localStorage.getItem("id");
 
-var data = fetch('http://localhost:3000/animal/' + _id).then(function (response) {
+var data = fetch('https://dev-web-animals.herokuapp.com/animal/' + _id).then(function (response) {
   return response.json();
 }).then(function (detail) {
   document.getElementById("title-text").innerHTML = detail.namePlate + "_" + detail.vietnameseName + "<br>" + " (" + detail.scienceName + ")";

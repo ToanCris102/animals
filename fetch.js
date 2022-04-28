@@ -42,7 +42,7 @@
 // }
 
 const _id = localStorage.getItem("id")
-const data = fetch('http://localhost:3000/animal/' + _id)
+const data = fetch('https://dev-web-animals.herokuapp.com/animal/' + _id)
   .then(response => response.json())
   .then(detail => {
     document.getElementById("title-text").innerHTML = detail.namePlate + "_" + detail.vietnameseName +   "<br>" + " (" + detail.scienceName+ ")"   

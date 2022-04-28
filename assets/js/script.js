@@ -89,7 +89,7 @@ var animals = [
 
 ]
 
-const data = fetch('http://localhost:3000/animal/list')
+const data = fetch('https://dev-web-animals.herokuapp.com/animal/list')
   .then(response => response.json())
   .then(result => {
     let gioidongvat = []
@@ -223,7 +223,7 @@ function clickC(){
         family: hoAnimal,
         set: boAnimal
     };
-    fetch(`http://localhost:3000/animal/${selectAnimal.key}/${selectAnimal.gender}/${selectAnimal.phylum}/${selectAnimal.grade}/${selectAnimal.family}/${selectAnimal.set}`)
+    fetch(`https://dev-web-animals.herokuapp.com/animal/${selectAnimal.key}/${selectAnimal.gender}/${selectAnimal.phylum}/${selectAnimal.grade}/${selectAnimal.family}/${selectAnimal.set}`)
     .then(response => response.json())
     .then(data => {        
         var wrap = document.getElementById("wrap-result")  
